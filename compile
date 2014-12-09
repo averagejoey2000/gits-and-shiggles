@@ -1,7 +1,13 @@
 #!/bin/sh
-./configure || ./autogen.sh || autoreconf -i
-echo 'pray'
-make
-sudo make install
-make clean
-echo 'Done'
+if [-f easy_install.py]
+then 
+    /bin/python easy_install.py
+    echo "DONE!"
+elif [ -f setup.py]
+then 
+    /bin/python setup.py install
+    echo 'DONE!'
+else
+    ./configure || ./autogen.sh && ./configure && make && make check ; make installcheck ; make install || sudo make install || su -c ' make install'
+    echo 'done'
+fi
