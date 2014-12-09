@@ -1,0 +1,7 @@
+#!/bin/sh
+./configure || ./autogen.sh || autoreconf -i
+echo 'pray'
+make
+sudo make install
+make clean
+echo 'Done'
