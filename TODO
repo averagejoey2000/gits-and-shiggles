@@ -4,3 +4,6 @@ add logic to detect administrator priveliges. Probably will use whoami
     Subset, add compatibility to cygwin. They can 'make install' without being root.
 Support deb creation
 Create script that automatically makes things makepkg (arch Linux) compatible.
+Add Cmake support
+Figure out the proper syntax for 'if then elif else fi' statements where the existence of a file (py | makefile.am | autogen | configure)
+       { [-f filename] [!-f filenamethatitisnt] } or { [ -f filename ] [ !-f filenamethatitisnt ] } respectively
