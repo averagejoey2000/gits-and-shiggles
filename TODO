@@ -1,7 +1,5 @@
 Test compile script.
 Add logic to detect py files and go from there.
-add logic to detect administrator priveliges. Probably will use whoami.
-    Subset, add compatibility to cygwin. They can 'make install' without being root.
 Figure out how to pass arguments to a bash script.
 Add "auto git clone".
 	Note to self, figure out what I mean by that later.
