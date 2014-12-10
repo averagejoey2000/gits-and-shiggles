@@ -2,5 +2,9 @@ Test compile script
 Add logic to detect py files and go from there
 add logic to detect administrator priveliges. Probably will use whoami
     Subset, add compatibility to cygwin. They can 'make install' without being root.
-Support deb creation
-Create script that automatically makes things makepkg (arch Linux) compatible.
+Figure out how to pass arguments to a bash script
+Add "auto git clone"
+	note to self, figure out what I mean by that later"
+
+
+
