@@ -1,4 +1,5 @@
 #!/bin/sh
-./configure || ./autogen.sh && ./configure || autoreconf -i && ./configure
-make && make check ; make install || sudo make install || su -c 'make install'
-echo 'done'
+./configure || ./autogen.sh && ./configure || autoreconf -i && ./configure #generates makefiles and, if necessary, configure scripts.
+echo pray
+make && make check ; make install || sudo make install || su -c 'make install' #make does the heavy lifting, make check requires make to complete successfully (iff) but make check is allowed to fail. `make install` runs without superuser privileges by default and falls back to sudo and su respectively.
+echo 'done' # tells me about it.
