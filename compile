@@ -1,13 +1,20 @@
 #!/bin/sh
-if [-f easy_install.py]
-then 
-    /bin/python easy_install.py
-    echo "DONE!"
-elif [ -f setup.py]
-then 
-    /bin/python setup.py install
-    echo 'DONE!'
-else
-    ./configure || ./autogen.sh && ./configure && make && make check ; make installcheck ; make install || sudo make install || su -c ' make install'
+if [ -f *.py ]
+then
+    if [ -f easy_install.py]
+    then 
+	/bin/python easy_install.py
+	echo "DONE!"
+    elif [ -f setup.py]
+    then 
+	/bin/python setup.py install
+	echo 'DONE!'
+    else python *.py
+  fi
+fi
+if [ -f Makefile.?? ]
+
+    ./configure || ./autogen.sh && ./configure || autoreconf -i 
+    make && make check ; make installcheck ; make install || sudo make install || su -c ' make install'
     echo 'done'
 fi
