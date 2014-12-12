@@ -4,7 +4,7 @@ gits-and-shiggles
 First ever project. Nothing important shall go here.
 
 This repository exists to help me learn git, management, and possibly even a bit of code. Feel free to do what you want. Yolo, right?
-
+Work on compile script is under branch 'compile'
 
 I can't believe I just wrote that
 
