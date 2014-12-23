@@ -1,6 +1,4 @@
-Test compile script
-Move from python execution to python detection followed by execution.
-Add Cmake support
-Figure out the proper syntax for 'if then elif else fi' statements where the existence of a file (py | makefile.am | autogen | configure)
-       { [-f filename] [!-f filenamethatitisnt] } or { [ -f filename ] [ !-f filenamethatitisnt ] } respectively
-
+Stop adding more languages
+Unfuck my life
+do something valuable.
+For further instruction, each project folder has a TODO unless I am content with the way things is, capisce?
