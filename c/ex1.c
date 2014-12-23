@@ -1,5 +1,5 @@
 #include <stdio.h>
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
   puts("Hello world.  This is the test program. it has strange indentation. \
 Do you like bananas? \
