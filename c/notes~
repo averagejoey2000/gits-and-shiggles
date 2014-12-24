@@ -1,6 +1,0 @@
-I have learned that I do not know how to print or acknowledge bash's environemnt variables in C.
-the "\
-"
-character is ignored.
-I have attempted to create a newline using /n
-but failed. No newline is crreated, but the character itself in inclueded in the final printed text.
