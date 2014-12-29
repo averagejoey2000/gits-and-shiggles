@@ -2,8 +2,8 @@
 
 int main(int argc, char *argv[])
 {
-	if argc != 2 {
-		printf("ERROR: You need one argument.\n";
+	if(argc != 2) {
+		printf("ERROR: You need one argument.\n");
 		//this is how you abourt a program
 		return 1;
 	}
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 
 		case 'o':
 		case 'O':
-			printf("%d: 'O'\n", i)
+			printf("%d: 'O'\n", i);
 			break;
 
 		case 'u':
