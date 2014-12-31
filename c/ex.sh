@@ -1,16 +1,17 @@
-./ex1
-./ex2
-./ex3
-./ex4
-./ex5
-./ex6
-./ex7
-./ex8
-./ex9
-./ex10
-./ex11
-./ex12
-./ex13
-./ex14
-./ex15
-./ex16
+valgrind -v ./ex1
+valgrind -v ./ex2
+valgrind -v ./ex3
+valgrind -v ./ex4
+valgrind -v ./ex5
+valgrind -v ./ex6
+valgrind -v ./ex7
+valgrind -v ./ex8
+valgrind -v ./ex9
+valgrind -v ./ex10
+valgrind -v ./ex11
+valgrind -v ./ex12
+valgrind -v ./ex13
+valgrind -v ./ex14
+valgrind -v ./ex15
+valgrind -v ./ex16
+valgrind -v ./ex17
