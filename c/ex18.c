@@ -1,7 +1,7 @@
-#inlcude <stdio.h>
-#inlcude <stdlib.h>
-#inlcude <errno.h>
-#inlcude <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <string.h>
 
 /** Our old friend die from ex17 */
 void die(const char *message)
@@ -70,7 +70,7 @@ int strange_order(int a, int b)
 * Used to test that we are sorting things out correctly
 * by doing the sort and printing it out.
 */
-void test_sorting(int *numbers, int count, compare_cp cmp)
+void test_sorting(int *numbers, int count, compare_cb cmp)
 {
 	int i = 0;
 	int *sorted = bubble_sort(numbers, count, cmp);
@@ -97,7 +97,7 @@ int main(int argc, char *argv[])
 	if(!numbers) die("Memory error.");
 
 	for(i = 0; i < count; i++) {
-		nubers[i] = atoi(inputs[i]);
+		numbers[i] = atoi(inputs[i]);
 	}
 	
 	test_sorting(numbers, count, sorted_order);
