@@ -24,3 +24,4 @@ valgrind -v ./ex17 db.dat d 3
 valgrind -v ./ex17 db.dat l
 valgrind -v ./ex17 db.dat g 2
 valgrind -v  --leak-check=yes ./ex17 db.dat g 2
+valgrind -v ./ex18 4 1 7 3 2 0 8
