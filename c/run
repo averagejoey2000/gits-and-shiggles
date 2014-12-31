@@ -1,1 +1,5 @@
+set -e
+make
 bash -x ex.sh | tee debug.output
+cp debug.output ../debug/c/
+make clean
