@@ -39,7 +39,7 @@ void Person_print(struct Person *who)
 	printf("\tWeight %d\n", who->weight);
 }
 
-int main(intargc, *argv[])
+int main(int argc, char *argv[])
 {
 	//make two people structures
 	struct Person *joe = Person_create(
@@ -61,7 +61,7 @@ int main(intargc, *argv[])
 	joe->weight += 40;
 	Person_print(joe);
 
-	frank->age +=20
+	frank->age +=20;
 	frank->weight += 20;
 	Person_print(frank);
 
