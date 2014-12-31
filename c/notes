@@ -6,3 +6,16 @@ I have attempted to create a newline using /n
 but failed. No newline is crreated, but the character itself in inclueded in the final printed text.
 int main (){}= main (){}
     Helpful for saving an unbelievably tiny amount of diskspace.
+Pointers to a function
+	int (*pointername)(int a, int b)
+	int callme(int a, int b)
+	int (*callme)(int a, int b)
+	int (*compare_cb)(int a, int b)
+
+	int (*tester)(int a, int b) = sorted order;
+	printf("TEST: %d is the same as %d\n", tester(2, 3), sorted_order(2, 3));
+
+    Write it: char *make_coolness(int awesome_levels)
+    Wrap it: char *(*make_coolness)(int awesome_levels)
+    Rename it: char *(*coolness_cb)(int awesome_levels)
+
