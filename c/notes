@@ -2,8 +2,10 @@ I have learned that I do not know how to print or acknowledge bash's environemnt
 the "\
 "
 character is ignored.
-I have attempted to create a newline using /n
-but failed. No newline is crreated, but the character itself in inclueded in the final printed text.
+
+
+The printf newline character is \n
+
 int main (){}= main (){}
     Helpful for saving an unbelievably tiny amount of diskspace.
 Pointers to a function
