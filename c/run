@@ -1,5 +1,8 @@
 set -e
 make
-bash -x ex.sh | tee debug.output
+bash -x ex.sh > debug.output
 cp debug.output ../debug/c/
 make clean
+less ../debug/c/debug.output
+cp ../debug/c/debug.output ~/projects/debug/gits-and-shiggles/c/
+rm ../debug/c/debug.output
