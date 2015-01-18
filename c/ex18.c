@@ -1,4 +1,21 @@
-#include <stdio.h>
+#include <stdio.h> k
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #include <stdlib.h>
 #include <errno.h>
 #include <string.h>
