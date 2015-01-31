@@ -1,4 +1,4 @@
-nclude "dbg.h"
+#include "dbg.h"
 #include <stdio.h>
 #include <stdlib.h>
 void test_debug()
@@ -11,14 +11,14 @@ void test_debug()
 void test_log_err()
 {
 	log_err("I believe everything is broken");
-	log_err("There are %d problems in %s", 0, space);
+	log_err("There are %d problems in %s", 0, "space");
 }
 void test_log_warn()
 {
 	log_warn("You can safely ignore this");
-	log_warn("Maybe considr looking at: %s" "/etc/passwd");
+	log_warn("Maybe consider looking at: %s", "/etc/passwd");
 }
-void test_info_log()
+void test_log_info()
 {
 	log_info("I did something mundane");
 	log_info("I did it %f time(s) today", 1.3f);
@@ -44,7 +44,7 @@ int test_sentinel(int code)
 	char *temp = malloc(100);
 	check_mem(temp);
 	switch(code) {
-		case: 1:
+		case 1:
 			log_info("It Worked");
 			break;
 		default:
@@ -65,7 +65,7 @@ int test_check_mem()
 error:
 	return -1;
 }
-int check_test_debug()
+int test_check_debug()
 {
 	int i = 0;
 	check_debug(i != 0, "Oops, I was 0");
@@ -73,20 +73,23 @@ int check_test_debug()
 error:
 	return -1;
 }
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	check(argc == 2, "Need an argument");
+
 	test_debug();
 	test_log_err();
 	test_log_warn();
 	test_log_info();
-	check(test_check(ex20.c) == 0, "Failed with ex20.c");
+
+	check(test_check("ex20.c") == 0, "Failed with ex20.c");
 	check(test_check(argv[1] == -1, "Failed with argv");
 	check(test_sentinel(1) == 0, "test_sentinel failed");
 	check(test_sentinel(100) == -1, "test_sentinel failed");
 	check(test_check_mem() == -1, "test_check_mem failed");
 	check(test_check_debug() == -1, "test_check_debug failed");
 	return 0;
+
 error:
 	return 1;
 }
