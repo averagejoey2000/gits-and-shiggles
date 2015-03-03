@@ -1,5 +1,5 @@
 #include "ex22.h"
-#include "dbg.h
+#include "dbg.h"
 
 const char *MY_NAME = "Zed A. Shaw";
 
@@ -20,12 +20,12 @@ void scope_demo(int count)
 	log_info("count after assign: %d", count);
 }
 
-int main(int argc char *argv[])
+int main(int argc, char *argv[])
 {
 	//test out THE_AGE accessors
 	log_info("MY name is: %s, age: %d", MY_NAME, get_age());
 
-	set age(100);
+	set_age(100);
 
 	log_info("My age is now: %d", get_age());
 
@@ -34,7 +34,7 @@ int main(int argc char *argv[])
 	print_size();
 
 	//test the ratio function static
-	log_info("Ratio at first: %f", update_ratio());
+	log_info("Ratio at first: %f", update_ratio(2.0));
 	log_info("Ratio again: %f", update_ratio(10.0));
 	log_info("Ratio once more: %f", update_ratio(300.0));
 
